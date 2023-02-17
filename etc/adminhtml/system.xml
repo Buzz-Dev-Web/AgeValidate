@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package   Buzz_AgeValidate
+ * @author    github.com/mauricio-tonny
+ * @copyright Copyright (c)
+ * @version   1.1
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="buzz_agevalidate" translate="label" sortOrder="999999">
+            <label>Buzz</label>
+        </tab>
+
+        <section id="buzz_agevalidatestatus" translate="label" sortOrder="32" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Age Validate</label>
+            <tab>buzz</tab>
+            <resource>Buzz_AgeValidate::config_base</resource>
+            <group id="agevalidate" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>How to configure ?</label>
+                <frontend_model>Buzz\AgeValidate\Block\Adminhtml\System\Config\Documentation</frontend_model>
+            </group>
+        </section>
+    </system>
+</config>

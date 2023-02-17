@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package   Buzz_AgeValidate
+ * @author    github.com/mauricio-tonny
+ * @copyright Copyright (c)
+ * @version   1.1
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Api\AccountManagementInterface">
+        <plugin name="buzz_age_validate_account_management_plugin" type="Buzz\AgeValidate\Plugin\AccountManagementPlugin" sortOrder="10"/>
+    </type>
+</config>
